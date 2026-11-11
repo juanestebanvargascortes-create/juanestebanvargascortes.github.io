@@ -1,0 +1,123 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgb(126, 226, 211);
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(67, 60, 255);
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    border-color: blueviolet;
+    color: rgb(102, 96, 211);
+}
+
+.encabezado-img{
+    background-image: url(fondotenis.jpg);
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(152, 230, 35);
+    
+
+
+}
+.seccion{
+height: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 20px;
+}
+.bg1{
+    background-color: rgb(183, 241, 141);
+}
+.bg2{
+    background-color: rgb(237, 167, 167);
+}
+.bg3{
+    background-color: rgb(177, 243, 243);
+}
+.seccion h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(100, 222, 127);
+}
+.seccion p{
+color: rgb(0, 0, 0);
+max-width: 900px;
+}
+
+.galeria {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 20px;
+}
+.galeria img {
+width: 100%;
+height: 350px;
+object-fit: cover;
+display: block;
+}
+.galeria .item{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 72, 255);
+    transition: transform 0.3;
+}
+.galeria .item:hover{
+    transform: scale(1.05);
+}
+/* aqui comienza el formulario*/
+.formulario-contacto{
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+}
+.formulario-contacto input, .formulario-contacto textarea{
+padding: 10px 15px;
+border: none;
+border-radius: 10px;
+font-size: 15px;
+font-family: cursive;
+}
+footer{
+background-color: #222;
+color: white;
+text-align: center;
+padding: 30px 20px;
+}
+.footer-contenido h3{
+margin-bottom: 15px;
+}
+.footer-contenido p{
+margin: 15px 0;
+}
+.copyright{
+font-size: 0.9rem;
+color: #b1afaf;
+}
